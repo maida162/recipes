@@ -1,141 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Wanderlust Travel</title>
-  <link rel="stylesheet" href="style.css" />
+    <title>My Favorite Foods</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">🌍 Wanderlust</div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#destinations">Destinations</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#booking">Book Now</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero -->
-  <section class="hero" id="home">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Explore The World</h1>
-      <p>Your next adventure is just one click away.</p>
-      <a href="#destinations" class="btn">Discover Places</a>
-    </div>
-  </section>
-
-  <!-- Destinations -->
-  <section class="destinations" id="destinations">
-    <h2>Popular Destinations</h2>
-    <p class="subtitle">Hand-picked places loved by travelers worldwide</p>
-    <div class="cards-grid">
-
-      <div class="dest-card">
-        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80" alt="Paris" />
-        <div class="dest-info">
-          <h3>Paris, France</h3>
-          <p>The city of love, lights, and the Eiffel Tower.</p>
-          <span class="tag">From $899</span>
+    <header>
+        <div class="header-inner">
+            <h1>🍽️ My Favorite Foods</h1>
+            <p>A personal food guide by Jamie &nbsp;|&nbsp; Computer Class Project</p>
+            <nav>
+                <a href="#pizza">Pizza</a>
+                <a href="#ramen">Ramen</a>
+                <a href="#recipe">Recipe</a>
+                <a href="#ranking">Ranking</a>
+            </nav>
         </div>
-      </div>
+    </header>
 
-      <div class="dest-card">
-        <img src="https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?w=600&q=80" alt="Bali" />
-        <div class="dest-info">
-          <h3>Bali, Indonesia</h3>
-          <p>Tropical paradise with temples, rice fields and beaches.</p>
-          <span class="tag">From $699</span>
-        </div>
-      </div>
+    <main>
 
-      <div class="dest-card">
-        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80" alt="Tokyo" />
-        <div class="dest-info">
-          <h3>Tokyo, Japan</h3>
-          <p>Where ancient tradition meets futuristic city life.</p>
-          <span class="tag">From $1099</span>
-        </div>
-      </div>
+        <!-- PIZZA SECTION -->
+        <section id="pizza" class="card">
+            <div class="card-text">
+                <h2>🍕 Pizza</h2>
+                <p>Pizza is probably my favorite food of all time. My mom makes it on Fridays sometimes and it's honestly way better than any delivery place. The secret is fresh mozzarella.</p>
+                <p>My go-to toppings:</p>
+                <ul>
+                    <li>Pepperoni (obviously)</li>
+                    <li>Extra cheese</li>
+                    <li>Mushrooms (my dad's influence)</li>
+                </ul>
+                <p class="note">Pineapple on pizza is a controversial topic in my friend group. I think it's fine. Tyler disagrees strongly.</p>
+            </div>
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80" alt="Pizza">
+            </div>
+        </section>
 
-      <div class="dest-card">
-        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600&q=80" alt="Santorini" />
-        <div class="dest-info">
-          <h3>Santorini, Greece</h3>
-          <p>Stunning sunsets, white buildings and crystal blue water.</p>
-          <span class="tag">From $999</span>
-        </div>
-      </div>
+        <!-- RAMEN SECTION -->
+        <section id="ramen" class="card reverse">
+            <div class="card-text">
+                <h2>🍜 Ramen</h2>
+                <p>Real ramen from a restaurant is completely different from the instant noodle kind. There's a place near my house called Noodle House and their broth is incredible.</p>
+                <p>Types I've tried:</p>
+                <ul>
+                    <li>Tonkotsu — rich pork broth, very creamy</li>
+                    <li>Shoyu — soy sauce based, lighter</li>
+                    <li>Miso — my personal favorite</li>
+                    <li>Instant cup noodles — still valid at midnight</li>
+                </ul>
+            </div>
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&q=80" alt="Ramen">
+            </div>
+        </section>
 
-      <div class="dest-card">
-        <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600&q=80" alt="Rome" />
-        <div class="dest-info">
-          <h3>Rome, Italy</h3>
-          <p>History, art, pasta and the Colosseum await you.</p>
-          <span class="tag">From $799</span>
-        </div>
-      </div>
+        <!-- RECIPE SECTION -->
+        <section id="recipe" class="recipe-section">
+            <h2>📝 My Grilled Cheese Recipe</h2>
+            <p class="subtitle">Something I actually know how to make. It's simple but really good.</p>
 
-      <div class="dest-card">
-        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80" alt="Dubai" />
-        <div class="dest-info">
-          <h3>Dubai, UAE</h3>
-          <p>Luxury, skyscrapers, desert safaris and golden beaches.</p>
-          <span class="tag">From $849</span>
-        </div>
-      </div>
+            <div class="recipe-grid">
+                <div class="ingredients">
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>2 slices of bread</li>
+                        <li>2 slices of cheese (American or Cheddar)</li>
+                        <li>Butter</li>
+                        <li>Garlic powder (optional but recommended)</li>
+                    </ul>
+                </div>
+                <div class="steps">
+                    <h3>Steps</h3>
+                    <ol>
+                        <li>Butter both sides of the bread</li>
+                        <li>Heat pan on medium</li>
+                        <li>Place bread in pan, add cheese</li>
+                        <li>Top with second slice</li>
+                        <li>Flip after 2–3 minutes</li>
+                        <li>Cook until both sides are golden brown</li>
+                        <li>Eat immediately</li>
+                    </ol>
+                </div>
+                <div class="recipe-img">
+                    <img src="https://images.unsplash.com/photo-1528736235302-52922df5c122?w=400&q=80" alt="Grilled Cheese">
+                    <p class="tip">💡 Pro tip: add garlic powder to the butter. trust me on this one.</p>
+                </div>
+            </div>
+        </section>
 
-    </div>
-  </section>
+        <!-- RANKING SECTION -->
+        <section id="ranking" class="ranking-section">
+            <h2>🏆 My Personal Food Ranking</h2>
+            <p class="subtitle">Completely unbiased. Totally scientific.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Food</th>
+                        <th>Rating</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>🥇 1</td>
+                        <td>Pizza</td>
+                        <td><span class="badge high">10/10</span></td>
+                        <td>Never a bad time for pizza</td>
+                    </tr>
+                    <tr>
+                        <td>🥈 2</td>
+                        <td>Ramen</td>
+                        <td><span class="badge high">9/10</span></td>
+                        <td>Only the real restaurant kind</td>
+                    </tr>
+                    <tr>
+                        <td>🥉 3</td>
+                        <td>Grilled Cheese</td>
+                        <td><span class="badge high">9/10</span></td>
+                        <td>I make this myself so bonus points</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Tacos</td>
+                        <td><span class="badge mid">8/10</span></td>
+                        <td>Depends heavily on the place</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Broccoli</td>
+                        <td><span class="badge low">3/10</span></td>
+                        <td>My mom makes me eat this</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-  <!-- About -->
-  <section class="about" id="about">
-    <div class="about-img">
-      <img src="https://images.unsplash.com/photo-1488085061387-422e29b40080?w=700&q=80" alt="Travel" />
-    </div>
-    <div class="about-text">
-      <h2>Why Choose Wanderlust?</h2>
-      <p>We've been helping travelers explore the world since 2010. From budget backpackers to luxury seekers, we craft trips that match your style and budget.</p>
-      <ul>
-        <li>✅ 500+ destinations worldwide</li>
-        <li>✅ 24/7 customer support</li>
-        <li>✅ Best price guarantee</li>
-        <li>✅ Trusted by 50,000+ travelers</li>
-      </ul>
-    </div>
-  </section>
+    </main>
 
-  <!-- Booking -->
-  <section class="booking" id="booking">
-    <h2>Book Your Trip</h2>
-    <p class="subtitle">Fill in the details and we'll get back to you within 24 hours</p>
-    <form class="booking-form" id="bookingForm">
-      <input type="text" placeholder="Full Name" required />
-      <input type="email" placeholder="Email Address" required />
-      <select required>
-        <option value="" disabled selected>Select Destination</option>
-        <option>Paris, France</option>
-        <option>Bali, Indonesia</option>
-        <option>Tokyo, Japan</option>
-        <option>Santorini, Greece</option>
-        <option>Rome, Italy</option>
-        <option>Dubai, UAE</option>
-      </select>
-      <input type="date" required />
-      <button type="submit" class="btn">Book Now</button>
-    </form>
-    <p class="form-msg" id="formMsg"></p>
-  </section>
+    <footer>
+        <p>Made by Jamie &nbsp;|&nbsp; Computer Class 2024 &nbsp;|&nbsp; Built with HTML & CSS</p>
+    </footer>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 Wanderlust Travel Agency. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
