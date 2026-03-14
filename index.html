@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wanderlust Travel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">🌍 Wanderlust</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#booking">Book Now</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Explore The World</h1>
+      <p>Your next adventure is just one click away.</p>
+      <a href="#destinations" class="btn">Discover Places</a>
+    </div>
+  </section>
+
+  <!-- Destinations -->
+  <section class="destinations" id="destinations">
+    <h2>Popular Destinations</h2>
+    <p class="subtitle">Hand-picked places loved by travelers worldwide</p>
+    <div class="cards-grid">
+
+      <div class="dest-card">
+        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80" alt="Paris" />
+        <div class="dest-info">
+          <h3>Paris, France</h3>
+          <p>The city of love, lights, and the Eiffel Tower.</p>
+          <span class="tag">From $899</span>
+        </div>
+      </div>
+
+      <div class="dest-card">
+        <img src="https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?w=600&q=80" alt="Bali" />
+        <div class="dest-info">
+          <h3>Bali, Indonesia</h3>
+          <p>Tropical paradise with temples, rice fields and beaches.</p>
+          <span class="tag">From $699</span>
+        </div>
+      </div>
+
+      <div class="dest-card">
+        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80" alt="Tokyo" />
+        <div class="dest-info">
+          <h3>Tokyo, Japan</h3>
+          <p>Where ancient tradition meets futuristic city life.</p>
+          <span class="tag">From $1099</span>
+        </div>
+      </div>
+
+      <div class="dest-card">
+        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600&q=80" alt="Santorini" />
+        <div class="dest-info">
+          <h3>Santorini, Greece</h3>
+          <p>Stunning sunsets, white buildings and crystal blue water.</p>
+          <span class="tag">From $999</span>
+        </div>
+      </div>
+
+      <div class="dest-card">
+        <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600&q=80" alt="Rome" />
+        <div class="dest-info">
+          <h3>Rome, Italy</h3>
+          <p>History, art, pasta and the Colosseum await you.</p>
+          <span class="tag">From $799</span>
+        </div>
+      </div>
+
+      <div class="dest-card">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80" alt="Dubai" />
+        <div class="dest-info">
+          <h3>Dubai, UAE</h3>
+          <p>Luxury, skyscrapers, desert safaris and golden beaches.</p>
+          <span class="tag">From $849</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1488085061387-422e29b40080?w=700&q=80" alt="Travel" />
+    </div>
+    <div class="about-text">
+      <h2>Why Choose Wanderlust?</h2>
+      <p>We've been helping travelers explore the world since 2010. From budget backpackers to luxury seekers, we craft trips that match your style and budget.</p>
+      <ul>
+        <li>✅ 500+ destinations worldwide</li>
+        <li>✅ 24/7 customer support</li>
+        <li>✅ Best price guarantee</li>
+        <li>✅ Trusted by 50,000+ travelers</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section class="booking" id="booking">
+    <h2>Book Your Trip</h2>
+    <p class="subtitle">Fill in the details and we'll get back to you within 24 hours</p>
+    <form class="booking-form" id="bookingForm">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <select required>
+        <option value="" disabled selected>Select Destination</option>
+        <option>Paris, France</option>
+        <option>Bali, Indonesia</option>
+        <option>Tokyo, Japan</option>
+        <option>Santorini, Greece</option>
+        <option>Rome, Italy</option>
+        <option>Dubai, UAE</option>
+      </select>
+      <input type="date" required />
+      <button type="submit" class="btn">Book Now</button>
+    </form>
+    <p class="form-msg" id="formMsg"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Wanderlust Travel Agency. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
